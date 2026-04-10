@@ -1,0 +1,14 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#09090B"/>
+  <circle cx="304" cy="302" r="170" fill="#FF2A2A"/>
+  <rect x="66" y="66" width="1268" height="768" rx="42" fill="#111218" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <text x="112" y="222" fill="#F4F1EB" font-family="Arial Black" font-size="150">SOCIAL</text>
+  <text x="112" y="366" fill="#FF2A2A" font-family="Arial Black" font-size="150">BRAND</text>
+  <text x="112" y="510" fill="#F4F1EB" font-family="Arial Black" font-size="150">STUDIO</text>
+  <rect x="808" y="178" width="394" height="520" rx="30" fill="#17171E"/>
+  <rect x="862" y="230" width="286" height="70" rx="18" fill="#0A0A0D"/>
+  <rect x="862" y="326" width="286" height="70" rx="18" fill="#0A0A0D"/>
+  <rect x="862" y="422" width="286" height="70" rx="18" fill="#0A0A0D"/>
+  <rect x="862" y="518" width="286" height="126" rx="18" fill="#0A0A0D"/>
+  <text x="112" y="704" fill="#A1A1AA" font-family="Arial" font-size="34">Calendário editorial, identidade e sistema criativo.</text>
+</svg>

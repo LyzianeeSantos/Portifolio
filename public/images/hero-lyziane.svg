@@ -1,0 +1,13 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" fill="#09090B"/>
+  <circle cx="660" cy="290" r="200" fill="#FF2A2A"/>
+  <rect x="64" y="74" width="772" height="1052" rx="40" fill="#111115"/>
+  <path d="M157 1017C225 902 321 831 445 804C604 769 702 675 716 523C728 390 672 287 548 246C436 208 333 245 262 345C196 438 168 547 170 667L157 1017Z" fill="#101014"/>
+  <path d="M260 997C305 848 390 740 515 674C613 622 670 544 678 440C686 332 634 261 541 232C466 208 393 222 329 276C226 364 197 508 211 701L260 997Z" fill="#1A1A20"/>
+  <path d="M328 439C328 328 403 248 504 248C599 248 669 316 669 418C669 521 597 593 503 593C405 593 328 536 328 439Z" fill="#D8C5BC"/>
+  <path d="M330 390C343 283 425 210 530 210C618 210 684 264 707 342C691 314 669 294 642 281C560 242 449 262 370 334L330 390Z" fill="#15151A"/>
+  <path d="M323 621C384 565 455 537 535 537C625 537 694 571 742 640V1118H202L227 763C243 705 275 657 323 621Z" fill="#0F1116"/>
+  <rect x="109" y="104" width="682" height="992" rx="24" stroke="#FFFFFF" stroke-opacity="0.16"/>
+  <text x="124" y="185" fill="#F4F1EB" font-family="Arial" font-size="28" letter-spacing="7">LYZIANE SANTOS</text>
+  <text x="124" y="1086" fill="#9F9FA8" font-family="Arial" font-size="20" letter-spacing="6">SOFTWARE • INFLUENCE • CREATIVE PRESENCE</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#070709"/>
+  <rect x="64" y="64" width="1272" height="772" rx="40" fill="#101116" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <circle cx="1043" cy="264" r="190" fill="#FF2A2A"/>
+  <text x="118" y="220" fill="#F4F1EB" font-family="Arial Black" font-size="132">ANALYTICS</text>
+  <text x="118" y="350" fill="#F4F1EB" font-family="Arial Black" font-size="132">DASHBOARD</text>
+  <rect x="118" y="470" width="444" height="230" rx="28" fill="#181922"/>
+  <rect x="596" y="180" width="620" height="482" rx="34" fill="#15151B"/>
+  <rect x="646" y="236" width="246" height="128" rx="24" fill="#0A0A0D"/>
+  <rect x="920" y="236" width="246" height="128" rx="24" fill="#0A0A0D"/>
+  <rect x="646" y="394" width="520" height="218" rx="24" fill="#0A0A0D"/>
+  <path d="M686 540C749 472 820 435 900 429C954 425 1006 435 1054 459C1099 481 1133 513 1158 556" stroke="#FF2A2A" stroke-width="12" stroke-linecap="round"/>
+  <text x="156" y="548" fill="#9CA3AF" font-family="Arial" font-size="24" letter-spacing="4">CREATOR INTELLIGENCE</text>
+  <text x="156" y="606" fill="#F4F1EB" font-family="Arial" font-size="44">Métricas, campanhas e presença digital em um só painel.</text>
+</svg>

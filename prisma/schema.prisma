@@ -1,0 +1,97 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         String   @default("ADMIN")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Profile {
+  id            String          @id @default(cuid())
+  name          String
+  age           Int
+  degree        String
+  profession    String
+  headline      String
+  introTagline  String
+  about         String          @db.Text
+  heroImage     String
+  aboutImage    String
+  heroLabel     String
+  location      String
+  email         String
+  phone         String
+  accentQuote   String          @db.Text
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  skillGroups   SkillGroup[]
+  educationItems EducationItem[]
+  socialLinks   SocialLink[]
+}
+
+model SkillGroup {
+  id        String   @id @default(cuid())
+  title     String
+  items     Json
+  order     Int      @default(0)
+  profileId String
+  profile   Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+}
+
+model EducationItem {
+  id          String   @id @default(cuid())
+  title       String
+  subtitle    String
+  period      String
+  description String   @db.Text
+  order       Int      @default(0)
+  profileId   String
+  profile     Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+}
+
+model SocialLink {
+  id        String   @id @default(cuid())
+  platform  String
+  label     String
+  url       String
+  order     Int      @default(0)
+  profileId String
+  profile   Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+}
+
+model Project {
+  id              String   @id @default(cuid())
+  title           String
+  slug            String   @unique
+  description     String   @db.Text
+  longDescription String   @db.Text
+  imageUrl        String
+  githubUrl       String
+  liveUrl         String?
+  stack           Json
+  featured        Boolean  @default(false)
+  order           Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String   @db.Text
+  status    String   @default("NEW")
+  createdAt DateTime @default(now())
+}

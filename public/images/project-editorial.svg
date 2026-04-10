@@ -1,0 +1,13 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#09090B"/>
+  <circle cx="1110" cy="230" r="170" fill="#FF2A2A"/>
+  <rect x="72" y="72" width="1256" height="756" rx="36" fill="#121217" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <text x="122" y="240" fill="#FF2A2A" font-family="Arial Black" font-size="170">EDITORIAL</text>
+  <text x="122" y="410" fill="#F4F1EB" font-family="Arial Black" font-size="152">COMMERCE</text>
+  <rect x="122" y="500" width="522" height="184" rx="26" fill="#17171D"/>
+  <rect x="718" y="190" width="472" height="464" rx="32" fill="#15151B"/>
+  <rect x="770" y="246" width="366" height="352" rx="22" fill="#0B0B0F"/>
+  <path d="M818 498C887 399 965 350 1051 350C1090 350 1122 359 1147 377V567H818V498Z" fill="#FF2A2A"/>
+  <text x="154" y="560" fill="#A1A1AA" font-family="Arial" font-size="28" letter-spacing="4">FASHION-TECH STORYTELLING</text>
+  <text x="154" y="610" fill="#F4F1EB" font-family="Arial" font-size="46">Layouts imersivos, motion fluido e navegação premium.</text>
+</svg>

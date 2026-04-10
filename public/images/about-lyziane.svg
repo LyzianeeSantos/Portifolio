@@ -1,0 +1,11 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" fill="#0A0A0D"/>
+  <circle cx="307" cy="392" r="248" fill="#FF2A2A"/>
+  <rect x="80" y="80" width="740" height="1040" rx="40" fill="#101015"/>
+  <path d="M220 1044C228 912 258 801 311 713C382 596 472 520 583 484C653 461 719 465 780 495V1120H196L220 1044Z" fill="#12131A"/>
+  <path d="M345 463C345 358 418 282 516 282C617 282 687 357 687 455C687 555 615 632 520 632C421 632 345 563 345 463Z" fill="#DCCAC0"/>
+  <path d="M330 434C356 322 428 243 547 229C637 219 715 262 753 343C690 303 620 287 541 297C455 308 386 354 330 434Z" fill="#191A1F"/>
+  <path d="M364 646C435 598 503 576 567 579C661 584 732 631 780 719V1110H255C252 987 289 883 364 798C392 767 419 741 447 720L364 646Z" fill="#181A22"/>
+  <text x="126" y="176" fill="#F4F1EB" font-family="Arial" font-size="28" letter-spacing="8">HELLO, I'M LYZIANE</text>
+  <text x="126" y="1080" fill="#A1A1AA" font-family="Arial" font-size="20" letter-spacing="6">CREATIVE ENGINEER WITH VISUAL PRESENCE</text>
+</svg>
