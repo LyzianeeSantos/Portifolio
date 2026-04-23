@@ -3,6 +3,7 @@
 :root {
   --background: #050505;
   --foreground: #f4f1eb;
+  --font-impact: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --card: rgba(12, 12, 14, 0.82);
   --card-foreground: #f4f1eb;
   --popover: #0e0e10;
@@ -47,6 +48,7 @@
   --font-sans: var(--font-manrope);
   --font-display: var(--font-bebas);
   --font-accent: var(--font-cormorant);
+  --font-hero: var(--font-impact);
 }
 
 * {

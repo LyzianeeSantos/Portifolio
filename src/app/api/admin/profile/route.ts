@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { getAuthSession } from "@/lib/auth";
-import { prisma } from "@/lib/prisma";
-import { profileSchema } from "@/lib/validators";
+import { profileSchema } from "@/schemas/forms";
+import { getAuthSession } from "@/services/auth";
+import { database } from "@/services/database";
 
 export async function PUT(request: Request) {
   const session = await getAuthSession();
@@ -18,13 +18,13 @@ export async function PUT(request: Request) {
     return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
   }
 
-  const profile = await prisma.profile.findFirst();
+  const profile = await database.profile.findFirst();
 
   if (!profile) {
     return NextResponse.json({ error: "Profile not found" }, { status: 404 });
   }
 
-  await prisma.profile.update({
+  await database.profile.update({
     where: {
       id: profile.id,
     },

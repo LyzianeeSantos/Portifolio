@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { getAuthSession } from "@/lib/auth";
-import { prisma } from "@/lib/prisma";
-import { slugify } from "@/lib/utils";
-import { projectSchema } from "@/lib/validators";
+import { projectSchema } from "@/schemas/forms";
+import { getAuthSession } from "@/services/auth";
+import { database } from "@/services/database";
+import { slugify } from "@/utils/text";
 
 export async function POST(request: Request) {
   const session = await getAuthSession();
@@ -19,8 +19,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
   }
 
-  const count = await prisma.project.count();
-  const project = await prisma.project.create({
+  const count = await database.project.count();
+  const project = await database.project.create({
     data: {
       title: parsed.data.title,
       slug: slugify(parsed.data.title),

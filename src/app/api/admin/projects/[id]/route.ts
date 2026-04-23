@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { getAuthSession } from "@/lib/auth";
-import { prisma } from "@/lib/prisma";
-import { slugify } from "@/lib/utils";
-import { projectSchema } from "@/lib/validators";
+import { projectSchema } from "@/schemas/forms";
+import { getAuthSession } from "@/services/auth";
+import { database } from "@/services/database";
+import { slugify } from "@/utils/text";
 
 interface Params {
   params: Promise<{
@@ -26,7 +26,7 @@ export async function PUT(request: Request, { params }: Params) {
     return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
   }
 
-  const project = await prisma.project.update({
+  const project = await database.project.update({
     where: {
       id,
     },
@@ -62,7 +62,7 @@ export async function DELETE(_request: Request, { params }: Params) {
 
   const { id } = await params;
 
-  await prisma.project.delete({
+  await database.project.delete({
     where: {
       id,
     },

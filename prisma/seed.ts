@@ -1,7 +1,7 @@
 import "dotenv/config";
 import bcrypt from "bcryptjs";
 import { PrismaClient } from "@prisma/client";
-import { slugify } from "../src/lib/utils";
+import { slugify } from "../src/utils/text";
 
 const prisma = new PrismaClient();
 

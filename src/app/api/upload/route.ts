@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { getAuthSession } from "@/lib/auth";
-import { saveUploadedFile } from "@/lib/upload";
+import { getAuthSession } from "@/services/auth";
+import { saveUploadedFile } from "@/services/upload-file";
 
 export const runtime = "nodejs";
 

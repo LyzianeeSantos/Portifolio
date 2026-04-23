@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
-import { sendContactEmail } from "@/lib/mailer";
-import { contactFormSchema } from "@/lib/validators";
+import { contactFormSchema } from "@/schemas/forms";
+import { database } from "@/services/database";
+import { sendContactEmail } from "@/services/mailer";
 
 export async function POST(request: Request) {
   const body = await request.json();
@@ -11,7 +11,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 });
   }
 
-  await prisma.contactMessage.create({
+  await database.contactMessage.create({
     data: parsed.data,
   });
 
